@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Nossos Produtos | Açaí Dicasa{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <!-- Filtros de categoria -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                Categorias
+            </div>
+            <div class="list-group list-group-flush">
+                {% for categoria in categorias %}
+                <a href="#" 
+                   class="list-group-item list-group-item-action">
+                    {{ categoria.nome }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="row">
+            {% for produto in produtos %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="{{ produto.imagem.url }}" class="card-img-top" alt="{{ produto.nome }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ produto.nome }}</h5>
+                        <p class="card-text">{{ produto.descricao|truncatechars:100 }}</p>
+                        <h6>R$ {{ produto.preco }}</h6>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <button class="btn btn-primary btn-sm add-to-cart" 
+                                data-produto-id="{{ produto.id }}">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
