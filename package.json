@@ -1,0 +1,20 @@
+{
+  "name": "acai-dicasa-django",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "npx tailwindcss -i produtos/static/Styles/Style.css -o produtos/static/Styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaioAlixandre/Acai-Dicasa-Django.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaioAlixandre/Acai-Dicasa-Django/issues"
+  },
+  "homepage": "https://github.com/KaioAlixandre/Acai-Dicasa-Django#readme"
+}

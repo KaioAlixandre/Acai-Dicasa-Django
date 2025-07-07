@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'acaidicasa',
         'USER': 'root',
-        'PASSWORD': '0000',
+        'PASSWORD': '12435687',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
@@ -128,6 +128,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "produtos" / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

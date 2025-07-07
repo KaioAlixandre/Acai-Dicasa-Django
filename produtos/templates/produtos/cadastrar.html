@@ -5,19 +5,23 @@
 {% block title %}Cadastrar Produto{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h2 class="mb-4">Cadastrar Novo Produto</h2>
+<div class="max-w-xl mx-auto bg-white rounded-lg shadow p-8 mt-8">
+    <h2 class="text-2xl font-bold mb-6 text-purple-700 flex items-center gap-2">
+        <i class="fas fa-plus"></i> Cadastrar Novo Produto
+    </h2>
 
-    <form method="post" enctype="multipart/form-data" class="mb-5">
+    <form method="post" enctype="multipart/form-data" class="space-y-6">
         {% csrf_token %}
         {{ form|crispy }}
 
-        <button type="submit" class="btn btn-success">
-            <i class="fas fa-save"></i> Salvar Produto
-        </button>
-        <a href="{% url 'lista_produtos' %}" class="btn btn-secondary ms-2">
-            Cancelar
-        </a>
+        <div class="flex gap-4">
+            <button type="submit" class="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-2 rounded transition flex items-center gap-2">
+                <i class="fas fa-save"></i> Salvar Produto
+            </button>
+            <a href="{% url 'lista_produtos' %}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold px-6 py-2 rounded transition flex items-center gap-2">
+                Cancelar
+            </a>
+        </div>
     </form>
 </div>
 {% endblock %}
