@@ -3,41 +3,36 @@
 {% block title %}Nossos Produtos | Açaí Dicasa{% endblock %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-3">
+<div class="flex flex-col md:flex-row gap-8">
+    <div class="w-full md:w-1/4">
         <!-- Filtros de categoria -->
-        <div class="card mb-4">
-            <div class="card-header bg-primary text-white">
+        <div class="bg-white rounded shadow mb-4">
+            <div class="bg-purple-700 text-white px-4 py-2 rounded-t">
                 Categorias
             </div>
-            <div class="list-group list-group-flush">
+            <div>
                 {% for categoria in categorias %}
-                <a href="#" 
-                   class="list-group-item list-group-item-action">
+                <a href="#" class="block px-4 py-2 hover:bg-purple-100 border-b last:border-b-0">
                     {{ categoria.nome }}
                 </a>
                 {% endfor %}
             </div>
         </div>
     </div>
-    
-    <div class="col-md-9">
-        <div class="row">
+    <div class="w-full md:w-3/4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for produto in produtos %}
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="{{ produto.imagem.url }}" class="card-img-top" alt="{{ produto.nome }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ produto.nome }}</h5>
-                        <p class="card-text">{{ produto.descricao|truncatechars:100 }}</p>
-                        <h6>R$ {{ produto.preco }}</h6>
-                    </div>
-                    <div class="card-footer bg-white">
-                        <button class="btn btn-primary btn-sm add-to-cart" 
-                                data-produto-id="{{ produto.id }}">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
+            <div class="bg-white rounded shadow flex flex-col">
+                <img src="{{ produto.imagem.url }}" class="rounded-t h-48 object-cover" alt="{{ produto.nome }}">
+                <div class="p-4 flex-1 flex flex-col">
+                    <h5 class="font-bold text-lg mb-2">{{ produto.nome }}</h5>
+                    <p class="text-gray-700 flex-1">{{ produto.descricao|truncatechars:100 }}</p>
+                    <h6 class="text-purple-700 font-bold mt-2">R$ {{ produto.preco }}</h6>
+                </div>
+                <div class="p-4 border-t">
+                    <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800 w-full add-to-cart" data-produto-id="{{ produto.id }}">
+                        Adicionar ao Carrinho
+                    </button>
                 </div>
             </div>
             {% endfor %}
