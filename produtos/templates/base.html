@@ -68,17 +68,17 @@
         <h2 class="text-xl font-bold mb-3">Destaques</h2>
         <div class="flex gap-3 overflow-x-auto pb-2">
             <div class="min-w-[160px] bg-white rounded-xl shadow p-2 flex flex-col">
-                <img src="{% static 'img/acai.jpeg' %}" alt="Açaí" class="rounded-lg h-24 object-cover mb-2" />
+                <img src="{% static 'img/acai.png' %}" alt="Açaí" class="rounded-lg h-28 object-cover mb-2" />
                 <span class="font-semibold text-sm text-gray-800">AÇAÍ - 500mls</span>
                 <span class="text-gray-600 text-xs mt-1">R$ 21,00</span>
             </div>
             <div class="min-w-[160px] bg-white rounded-xl shadow p-2 flex flex-col">
-                <img src="{% static 'img/pastel.jpeg' %}" alt="Pastel" class="rounded-lg h-24 object-cover mb-2" />
+                <img src="{% static 'img/pastel.png' %}" alt="Pastel" class="rounded-lg h-28 object-cover mb-2" />
                 <span class="font-semibold text-sm text-gray-800">Pastel Frito</span>
                 <span class="text-gray-600 text-xs mt-1">A partir de R$ 12,00</span>
             </div>
             <div class="min-w-[160px] bg-white rounded-xl shadow p-2 flex flex-col">
-                <img src="{% static 'img/panqueca.jpeg' %}" alt="X Duplo" class="rounded-lg h-24 object-cover mb-2" />
+                <img src="{% static 'img/panqueca.png' %}" alt="X Duplo" class="rounded-lg h-28 object-cover mb-2" />
                 <span class="font-semibold text-sm text-gray-800">Panqueca</span>
                 <span class="text-gray-600 text-xs mt-1">R$ 27,00</span>
             </div>
@@ -87,25 +87,42 @@
 
         <!-- Categorias -->
         <h2 class="text-xl font-bold mt-3 mb-3">Categorias</h2>
-        <div class="grid grid-cols-3 sm:grid-cols-4 gap-4 mt-4">
-            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center gap-2">
-                <img src="{% static 'img/acai.jpeg' %}" alt="Açaí" class="rounded-lg h-28 w-28 object-cover mb-2" />
+        <div class="grid grid-cols-3 sm:grid-cols-4 gap-2 mt-4">
+            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/acai.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Açaí</span>
             </div>
-            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center gap-2">
-                <img src="{% static 'img/pastel.jpeg' %}" alt="Pastel" class="rounded-lg h-28 w-28 object-cover mb-2" />
-                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Pastéis</span>
+            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/milkShack.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">MilkShack</span>
             </div>
-             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center gap-2">
-                <img src="{% static 'img/pastel.jpeg' %}" alt="Pastel" class="rounded-lg h-28 w-28 object-cover mb-2" />
-                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Pastéis</span>
+            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/1.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Sorvete</span>
             </div>
-             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center gap-2">
-                <img src="{% static 'img/pastel.jpeg' %}" alt="Pastel" class="rounded-lg h-28 w-28 object-cover mb-2" />
-                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Pastéis</span>
+             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/panqueca.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Panqueca</span>
             </div>
+             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/beju.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Tapioca</span>
+            </div>
+             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/pastel.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Pastel</span>
+            </div>
+                <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                    <img src="{% static 'img/suco.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                    <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Bebidas</span>
+                </div>
+                 <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
+                    <img src="{% static 'img/Outros.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                    <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Outros</span>
+                </div>
         </div>
-         <!-- Fim Categorias -->
+        <div class="h-20 sm:h-0"></div>
+
     </main>
 
     <!-- Menu inferior fixo estilo mobile -->
