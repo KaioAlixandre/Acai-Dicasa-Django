@@ -22,7 +22,11 @@
                 <div class="bg-white rounded-lg shadow px-4 py-3 w-full mt-2 flex flex-col items-center">
                     <span class="font-bold text-lg text-[#2D0A3A]">Açaiteria DiCasa</span>
                     <div class="flex items-center gap-2 text-gray-500 text-sm mt-1">
-                        <i class="fas fa-map-marker-alt"></i> Praça do Geraldo Mirador-Ma <span class="mx-1">•</span> <a href="#" class="underline">Mais informações</a>
+                        <i class="fas fa-map-marker-alt"></i> Praça do Geraldo Mirador-Ma <span class="mx-1">•</span> 
+                        <!-- Substitua o link por um botão estilizado -->
+                        <button type="button" class="underline hover:text-purple-900 font-medium focus:outline-none bg-transparent" id="mais-informacoes-btn">
+                            Mais informações
+                        </button>
                     </div>
                     <span class="text-red-600 font-semibold text-sm mt-1">Fechado • Abrimos às 31h00</span>
                 </div>
@@ -103,36 +107,36 @@
         <!-- Categorias -->
         <h2 class="text-xl font-bold mt-3 mb-3">Categorias</h2>
         <div class="grid grid-cols-3 sm:grid-cols-4 gap-2 mt-4">
-            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/acai.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+            <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/acai.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Açaí</span>
             </div>
-            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/milkShack.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+            <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/milkShack.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">MilkShack</span>
             </div>
-            <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/1.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+            <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/1.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Sorvete</span>
             </div>
-             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/panqueca.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+             <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/panqueca.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Panqueca</span>
             </div>
-             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/beju.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+             <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/beju.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Tapioca</span>
             </div>
-             <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                <img src="{% static 'img/pastel.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+             <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                <img src="{% static 'img/pastel.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                 <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Pastel</span>
             </div>
-                <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                    <img src="{% static 'img/suco.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                    <img src="{% static 'img/suco.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                     <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Bebidas</span>
                 </div>
-                 <div class="bg-white border rounded-xl shadow p-3 flex flex-col items-center">
-                    <img src="{% static 'img/Outros.png' %}" alt="Açaí" class="rounded-lg h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
+                 <div class="bg-white border rounded shadow p-3 flex flex-col items-center">
+                    <img src="{% static 'img/Outros.png' %}" alt="Açaí" class="rounded h-38 w-38 sm:h-32 sm:w-32 object-cover mb-2" />
                     <span class="font-semibold text-base text-[#2D0A3A] text-center uppercase">Outros</span>
                 </div>
         </div>
@@ -161,6 +165,82 @@
             </a>
         </div>
     </nav>
+
+    <!-- Modal de Informações -->
+<div id="modal-informacoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40" style="display: none;">
+    <div class="bg-white rounded-xl shadow-lg max-w-xl w-full mx-4 p-6 relative h-[500px] overflow-y-auto">
+        <button id="fechar-modal-informacoes" class="absolute top-4 right-4 text-gray-400 hover:text-purple-700 text-2xl font-bold focus:outline-none">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Açaiteria DiCasa</h2>
+        <!-- Abas -->
+        <div class="flex border-b mb-4 ">
+            <button class="tab-btn px-4 py-2 font-semibold text-gray-500 border-b-2 border-transparent focus:outline-none transition" data-tab="sobre">SOBRE</button>
+            <button class="tab-btn px-4 py-2 font-semibold text-gray-500 border-b-2 border-transparent focus:outline-none transition" data-tab="horario">HORÁRIO</button>
+            <button class="tab-btn px-4 py-2 font-semibold text-gray-500 border-b-2 border-transparent focus:outline-none transition" data-tab="pagamento">PAGAMENTO</button>
+        </div>
+        <!-- Conteúdo das Abas -->
+        <div id="tab-sobre" class="tab-content">
+            <div class="flex gap-4 mb-4">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" class="w-16 h-16 rounded-lg border-2 border-white shadow object-cover" />
+                <div>
+                    <span class="block font-medium text-gray-700 mb-1">Açaiteria em Mirador-MA</span>
+                    <a href="https://instagram.com/acaiteriadicasa" target="_blank" class="text-purple-700 hover:underline flex items-center gap-1 text-sm">
+                        <i class="fab fa-instagram"></i> @acaiteriadicasa
+                    </a>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block font-semibold text-gray-800 mb-2">Contato</span>
+                <div class="flex gap-2">
+                    <a href="https://wa.me/5598999999999" target="_blank" class="flex items-center gap-2 border-2 border-purple-700 text-purple-700 px-3 py-2 rounded-lg hover:bg-purple-50 transition text-sm font-semibold">
+                        <i class="fab fa-whatsapp"></i> (98) 99999-9999
+                    </a>
+                    <a href="tel:98999999999" class="flex items-center gap-2 border-2 border-purple-700 text-purple-700 px-3 py-2 rounded-lg hover:bg-purple-50 transition text-sm font-semibold">
+                        <i class="fas fa-phone"></i> (98) 99999-9999
+                    </a>
+                </div>
+            </div>
+            <div>
+                <span class="block font-semibold text-gray-800 mb-1">Endereço</span>
+                <span class="text-gray-600 text-sm">Praça do Geraldo, Mirador-MA</span>
+            </div>
+        </div>
+        <div id="tab-horario" class="tab-content hidden">
+            <ul>
+                <li class="flex justify-between px-2 py-1 rounded hover:bg-gray-100"><span>Segunda</span><span>14:00 às 22:00</span></li>
+                <li class="flex justify-between px-2 py-1 rounded bg-gray-100"><span>Terça</span><span>14:00 às 22:00</span></li>
+                <li class="flex justify-between px-2 py-1 rounded"><span>Quarta</span><span class="text-gray-400 font-semibold">Fechado</span></li>
+                <li class="flex justify-between px-2 py-1 rounded"><span>Quinta</span><span>14:00 às 22:00</span></li>
+                <li class="flex justify-between px-2 py-1 rounded"><span>Sexta</span><span>14:00 às 22:15</span></li>
+                <li class="flex justify-between px-2 py-1 rounded"><span>Sábado</span><span>14:00 às 22:15</span></li>
+                <li class="flex justify-between px-2 py-1 rounded"><span>Domingo</span><span>14:00 às 22:15</span></li>
+            </ul>
+        </div>
+        <div id="tab-pagamento" class="tab-content hidden">
+            <div class="space-y-3">
+                <div class="flex items-center gap-3 bg-gray-50 rounded-lg px-3 py-2">
+                    <i class="fas fa-money-bill-wave text-xl text-gray-700"></i>
+                    <span class="font-medium text-gray-800">Dinheiro</span>
+                </div>
+                <div class="flex items-center gap-3 bg-gray-50 rounded-lg px-3 py-2">
+                    <img class="h-6" src="{% static 'img/pix.png' %}" alt="">
+                    <span class="font-medium text-gray-800">Pix</span>
+                </div>
+                <div class="flex items-center gap-3 bg-gray-50 rounded-lg px-3 py-2">
+                    <i class="far fa-credit-card text-xl text-gray-700"></i>
+                    <span class="font-medium text-gray-800">Cartão de crédito</span>
+                </div>
+                <div class="flex items-center gap-3 bg-gray-50 rounded-lg px-3 py-2">
+                    <i class="far fa-credit-card text-xl text-gray-700"></i>
+                    <span class="font-medium text-gray-800">Cartão de débito</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fim Modal -->
 
    
     <script src="{% static 'script.jsx' %}"></script>
