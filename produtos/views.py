@@ -19,3 +19,7 @@ def cadastrar_produto(request):
     else:
         form = ProdutoForm()
     return render(request, 'produtos/cadastrar.html', {'form': form})
+
+def promocoes(request):
+    produtos = Produto.objects.filter(disponivel=True)
+    return render(request, 'produtos/promocoes.html', {'produtos': produtos})
