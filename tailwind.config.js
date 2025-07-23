@@ -7,7 +7,11 @@ module.exports = {
     './pedidos/templates/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
